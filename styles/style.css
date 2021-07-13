@@ -11,6 +11,7 @@ h1 {
 .container {
     display: flex;
     align-items: center;
+    justify-content: center;
     
 }
 .Button {
@@ -25,24 +26,75 @@ h1 {
 /* common styles or utilites end */
 /* top screen start */
 .top-screen {
-   background-color: #2D25A0;
-   height: 677px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    background-color: #2D25A0;
+    height: 677px;
 }
 .half-width h1{
     color: #FFFFFF;
     margin-left: 156px;
+    margin-bottom: 240px;
     font-weight: 700;
-}
-.half-width a {
-    margin-left: 156px;
-}
-.half-width img {
-    width: 556.01px;
-    height: 438px;
-    margin-left: 102px;
-    margin-right: 140.99px;
+    transition: box-shadow 1s 0s ease-in, text-shadow 1s .5s ease-out, padding 1s .5s, border 1s .2s ease-in-out;
 }
 .text-block-applied {
     display: block;
 }
+.half-width h1:hover {
+    box-shadow: -6px -2px 23px 5px rgba(0,0,0,0.35);
+    padding-left: 15px;
+    border-radius: 15px;
+    
+}
+.half-width a {
+    position: relative;
+    left: 156px;
+    bottom: 178px;
+    transition: border 0.5s;
+}
+.half-width a:hover {
+    border: 3px solid skyblue;
+}
+.half-width img {
+    width: 556.01px;
+    height: 438px;
+    position: relative;
+    left: 200px;
+    transition: box-shadow 1s 0s ease-in, padding 1s .5s, border 1s .2s ease-out;
+}
+.half-width img:hover {
+    box-shadow: -6px -2px 23px 5px rgba(0,0,0,0.35);
+    padding-right: 3px;
+    border-radius: 15px;
+}
 /* top screen end  */
+/* Players-section start */
+.Players-section{
+    margin-top: 70px;
+    padding-top: 70px;
+}
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+.player {
+    width: 330px;
+    height: 474px;
+    padding-left: 15px;
+    padding-top: 10px;
+    box-shadow: 1px 1px 40px 2px rgba(0, 0, 0, 0.15);
+}
+.Players-section img {
+    height: 256px;
+    width: 300px;
+}
+.Players-section p {
+    text-justify: inter-word;
+}
+/* Players-section end */
