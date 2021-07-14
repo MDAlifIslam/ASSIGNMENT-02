@@ -4,15 +4,22 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-}
-h1 {
-    font-size: 64px
+    overflow-x: hidden;
 }
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    display: flex; 
+}
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+h3 {
+    font-size: 18px;
+    font-weight: 400;
 }
 .Button {
     text-decoration: none;
@@ -22,22 +29,26 @@ h1 {
     padding: 10px 24px 10px 24px;
     color: white;
 }
+p {
+    font-weight: 400;
+    font-size: 16px;
+}
+img {
+    max-width: 100%;
+    margin: 0 auto;
+}
 
 /* common styles or utilites end */
 /* top screen start */
 .top-screen {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: #2D25A0;
     height: 677px;
 }
 .half-width h1{
     color: #FFFFFF;
-    margin-left: 156px;
     margin-bottom: 240px;
-    font-weight: 700;
     transition: box-shadow 1s 0s ease-in, text-shadow 1s .5s ease-out, padding 1s .5s, border 1s .2s ease-in-out;
 }
 .text-block-applied {
@@ -47,11 +58,11 @@ h1 {
     box-shadow: -6px -2px 23px 5px rgba(0,0,0,0.35);
     padding-left: 15px;
     border-radius: 15px;
+    text-shadow: -6px 0px 3px rgba(206,89,55,0.8);
     
 }
 .half-width a {
     position: relative;
-    left: 156px;
     bottom: 178px;
     transition: border 0.5s;
 }
@@ -73,6 +84,8 @@ h1 {
 /* top screen end  */
 /* Players-section start */
 .Players-section{
+    align-items: center;
+    justify-content: space-evenly;
     margin-top: 70px;
     padding-top: 70px;
 }
@@ -95,6 +108,84 @@ h1 {
     width: 300px;
 }
 .Players-section p {
-    text-justify: inter-word;
+    margin-top: 10px;
 }
 /* Players-section end */
+/* Players-highlights start */
+.players-highlights {
+    text-align: center;
+    padding: 50px 0px ;
+}
+.embed-videos {
+    max-width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+}
+iframe.video-iframe {
+    width: 100%;
+    height: 100%;
+}
+/* Players-highlights end */
+/* players-jersey start*/
+.player-jersry {
+    padding-top: 50px;
+}
+.section-tittle {
+    text-align: center;
+}
+.jerseys {
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.jersey {
+    width: calc(100%/3);
+    padding: 10px;
+}
+.Jersey-image img {
+    max-height: 500px;
+}
+
+/* footer-section start */
+.footer-section{
+    justify-content: space-evenly;
+    margin-top: 150px;
+   
+}
+.footer-section .footer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    width: 483.87px;
+    height: 213px;
+    
+}
+.social-media {
+    margin-top: 20px;
+    width: 170px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 156.94px;
+    right: 156.94px;
+
+}
+.social-media a {
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.footer-section img {
+    width: 483.87px;
+    height: 110px;
+}
+.footer-section .footer h3 {
+    margin-top: 20px;
+    position: relative;
+    left: 123.94px;
+    right: 123.94px;
+}
+/* footer-section end */
